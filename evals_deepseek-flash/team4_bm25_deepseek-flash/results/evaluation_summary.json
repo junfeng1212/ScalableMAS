@@ -1,0 +1,63 @@
+{
+  "LLM": "deepseek-flash",
+  "Accuracy (%)": 77.78,
+  "Recall (%)": 69.75,
+  "avg_tool_stats": {
+    "search": 160.88888888888889,
+    "read_messages": 14.11111111111111,
+    "bash": 2.111111111111111,
+    "post_message": 6.666666666666667,
+    "finish": 1.0
+  },
+  "Calibration Error (%)": 0.0,
+  "Retriever": "change me when submitting",
+  "Link": "change me when submitting",
+  "Evaluation Date": "2026-10-21",
+  "per_query_metrics": [
+    {
+      "query_id": "772",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "769",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "774",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "773",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "771",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "783",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "770",
+      "correct": true,
+      "recall": 77.78
+    },
+    {
+      "query_id": "776",
+      "correct": true,
+      "recall": 83.33
+    },
+    {
+      "query_id": "781",
+      "correct": true,
+      "recall": 66.67
+    }
+  ]
+}

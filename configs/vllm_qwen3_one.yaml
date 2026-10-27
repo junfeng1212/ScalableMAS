@@ -1,0 +1,7 @@
+# Single-sample debug run: same settings as vllm_qwen3.yaml, but only one query.
+base: vllm_qwen3.yaml
+experiment: team4_bm25_qwen3.8-27b-fp8_one  # separate directory, so the full run never reuses this result
+
+browsecomp:
+  max_queries: 1                  # the first query in queries.tsv
+  query_ids: []                   # or pick one, e.g. ["769"] (then max_queries just caps the list)

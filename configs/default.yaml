@@ -1,0 +1,56 @@
+# Settings shared by every experiment. The `llm` block lives in the presets
+# (claude.yaml / openai.yaml / vllm_qwen3.yaml), which start with `base: default.yaml`.
+
+experiment: team4_bm25            # results go to <output_dir>/<experiment>/
+output_dir: runs
+
+env:                              # exported before anything runs
+  HF_HOME: /mnt/data2/users/puning.yang/huggingface_cache
+
+team:
+  agents: [Bob, Eric, Ken]
+  max_steps: 60                   # LLM turns per agent
+  time_limit_minutes: 30          # per query, for the whole team
+  system_prompt: prompts/system.md
+  task_prompt: prompts/task.md
+
+board:
+  enabled: true                   # false: no post_message / read_messages tools (single agent, or independent agents)
+  notify_unread: true            # after each tool round, tell the agent how many board posts it has not read
+  max_wait_seconds: 120           # upper bound for read_messages(wait_seconds)
+
+sandbox:                          # one private Docker container per agent
+  image: python:3.11-slim
+  docker_args: [--network, none, --memory, 2g, --cpus, "1", --pids-limit, "256"]
+  command_timeout: 60             # seconds per bash command
+  max_output_chars: 8000
+
+browsecomp:
+  repo_dir: BrowseComp-Plus
+  queries_tsv: BrowseComp-Plus/topics-qrels/queries.tsv
+  query_ids: []                   # empty = all queries
+  max_queries: null               # e.g. 3 for a pilot run
+  max_concurrent_queries: 4       # each running query uses len(agents) containers
+
+retriever:                        # BrowseComp-Plus searcher/mcp_server.py, started by scripts/serve_retriever.sh
+  url: http://127.0.0.1:8080/mcp
+  port: 8080
+  get_document: false             # paper's main setting: search tool only
+  java_home: /mnt/data2/users/puning.yang/miniconda3/envs/teamboard/lib/jvm   # Java 21 for BM25 (pyserini)
+  searcher_args:                  # passed to mcp_server.py as --key value (true -> --key)
+    searcher-type: bm25
+    index-path: indexes/bm25
+    k: 5
+    snippet-max-tokens: 512
+  # Qwen3-Embedding-8B instead of BM25 (needs a GPU and the qwen3-embedding-8b index):
+  #   searcher-type: faiss
+  #   index-path: "indexes/qwen3-embedding-8b/corpus.shard*.pkl"
+  #   model-name: Qwen/Qwen3-Embedding-8B
+  #   normalize: true
+
+evaluation:                       # BrowseComp-Plus scripts_evaluation/evaluate_run.py (Qwen3-32B judge, needs both GPUs)
+  eval_dir: evals
+  env:                            # extra environment variables for the judge process
+    NCCL_P2P_DISABLE: "1"         # TP=2 over GPUs that only meet through the CPU: NCCL P2P hangs (same as vllm_serve)
+  args:
+    tensor_parallel_size: 2

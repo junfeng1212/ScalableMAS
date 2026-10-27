@@ -1,0 +1,20 @@
+# Comparison experiment, TEAM side: 3 DeepSeek-Flash agents + message board on 20 BrowseComp-Plus queries.
+# compare20_solo.yaml inherits everything from here (model, queries, judge) and only changes the team.
+# Run both with scripts/compare20.sh.
+base: deepseek.yaml
+experiment: cmp20_team3_deepseek-flash
+
+browsecomp:
+  query_ids: [769, 770, 771, 772, 773, 774, 775, 776, 778, 781,
+              783, 784, 785, 786, 787, 788, 790, 791, 792, 793]   # the first 20 queries of queries.tsv
+  max_queries: null
+
+team:
+  agents: [Bob, Eric, Ken]
+
+board:
+  enabled: true
+
+api_evaluation:
+  args:
+    force: true                   # re-judge every query, so a query re-run after an error never keeps a stale verdict

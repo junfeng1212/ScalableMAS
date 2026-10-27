@@ -1,0 +1,34 @@
+base: default.yaml
+experiment: team4_bm25_qwen3.8-27b-fp8
+
+browsecomp:
+  max_concurrent_queries: 2       # the local server's KV cache is shared by every running agent
+
+llm:
+  provider: vllm                  # OpenAI-compatible Chat Completions
+  model: Qwen/Qwen3.8-27B-FP8
+  base_url: http://127.0.0.1:8000/v1
+  api_key_env: VLLM_API_KEY       # unset -> "EMPTY"
+  reasoning_key: reasoning        # vLLM hands earlier thinking sent back under this field to the chat template
+  client: {max_retries: 3, timeout: 1800}
+  request:                        # passed verbatim to client.chat.completions.create
+    max_tokens: 32768             # thinking is on (reasoning_effort xhigh by default); a cut-off turn stops the agent
+    temperature: 1.0              # model card, thinking mode: temperature 1.0, top_p 0.95, top_k 20
+    top_p: 0.95
+    extra_body: {top_k: 20}
+
+vllm_serve:                       # scripts/serve_vllm.sh -> <executable> serve <model> --<key> <value> ...
+  executable: /mnt/data2/users/puning.yang/miniconda3/envs/vllm/bin/vllm   # vLLM >= 0.17 for qwen3_5 (BrowseComp-Plus/.venv has 0.9)
+  model: Qwen/Qwen3.8-27B-FP8     # block-wise FP8 (128x128), ~31 GB of weights in total, ~16 GB per GPU with TP=2
+  env:                            # extra environment variables for the vLLM process
+    NCCL_P2P_DISABLE: "1"         # the GPUs only reach each other through the CPU (topology SYS, IOMMU on): NCCL P2P hangs
+  args:
+    port: 8000
+    tensor-parallel-size: 2
+    max-model-len: 262144         # native context: no YaRN rope-scaling
+    gpu-memory-utilization: 0.9
+    language-model-only: true     # skip the vision tower, leaving more memory for the KV cache
+    enable-auto-tool-choice: true
+    tool-call-parser: qwen3_coder # Qwen3.8 writes XML-style <function=...> tool calls, not hermes JSON
+    reasoning-parser: qwen3
+    disable-custom-all-reduce: true

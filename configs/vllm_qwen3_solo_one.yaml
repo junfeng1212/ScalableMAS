@@ -1,0 +1,12 @@
+# Single-agent baseline on one query: same model and settings as vllm_qwen3_one.yaml,
+# but only one agent and no message board.
+base: vllm_qwen3_one.yaml
+experiment: solo_bm25_qwen3.8-27b-fp8_one
+
+team:
+  agents: [Bob]
+  system_prompt: prompts/system_solo.md
+  task_prompt: prompts/task_solo.md
+
+board:
+  enabled: false                  # nobody to talk to: no post_message / read_messages tools

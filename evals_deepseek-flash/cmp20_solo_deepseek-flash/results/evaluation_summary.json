@@ -1,0 +1,116 @@
+{
+  "LLM": "deepseek-flash",
+  "Accuracy (%)": 65.0,
+  "Recall (%)": 68.62,
+  "avg_tool_stats": {
+    "search": 100.95,
+    "finish": 0.95,
+    "bash": 1.35
+  },
+  "Calibration Error (%)": 0.0,
+  "Retriever": "change me when submitting",
+  "Link": "change me when submitting",
+  "Evaluation Date": "2026-10-27",
+  "per_query_metrics": [
+    {
+      "query_id": "787",
+      "correct": true,
+      "recall": 88.89
+    },
+    {
+      "query_id": "786",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "792",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "772",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "769",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "774",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "790",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "773",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "771",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "783",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "793",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "775",
+      "correct": false,
+      "recall": 16.67
+    },
+    {
+      "query_id": "778",
+      "correct": false,
+      "recall": 100.0
+    },
+    {
+      "query_id": "791",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "770",
+      "correct": false,
+      "recall": 11.11
+    },
+    {
+      "query_id": "776",
+      "correct": true,
+      "recall": 83.33
+    },
+    {
+      "query_id": "785",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "781",
+      "correct": true,
+      "recall": 66.67
+    },
+    {
+      "query_id": "788",
+      "correct": true,
+      "recall": 85.71
+    },
+    {
+      "query_id": "784",
+      "correct": false,
+      "recall": 20.0
+    }
+  ]
+}

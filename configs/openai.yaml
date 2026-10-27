@@ -1,0 +1,11 @@
+base: default.yaml
+experiment: team4_bm25_gpt-5
+
+llm:
+  provider: openai                # Responses API; reasoning is kept server-side between steps
+  model: gpt-5-2025-08-07
+  api_key_env: OPENAI_API_KEY
+  client: {max_retries: 8}        # openai.AsyncOpenAI(...) kwargs
+  request:                        # passed verbatim to client.responses.create
+    max_output_tokens: 40000
+    reasoning: {effort: medium}

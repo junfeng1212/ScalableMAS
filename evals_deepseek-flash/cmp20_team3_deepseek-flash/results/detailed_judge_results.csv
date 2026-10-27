@@ -1,0 +1,21 @@
+query_id,predicted_answer,correct_answer,judge_correct,confidence,is_completed,parse_error,json_path,num_citations,precision_positives,recall_positives
+787,Emmanuel Kwesi Danso Arthur Junior (professionally known as Kwesi Arthur),Emmanuel Kwesi Danso Arthur Junior ,True,92.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/787.json,7,0.8571428571428571,0.6666666666666666
+786,Kiran Shah,Kiran Shah,True,80.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/786.json,3,0.6666666666666666,0.6666666666666666
+792,Oral creatine supplementation: A potential adjunct therapy for rheumatoid arthritis patients,Oral creatine supplementation: A potential adjunct therapy for rheumatoid arthritis patients,True,88.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/792.json,5,1.0,1.0
+772,The longest-serving employee at the school is its secretary (the school secretary).,Secretary,True,60.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/772.json,4,0.75,0.6
+769,"Universitas Nasional (UNAS), Jakarta, Indonesia",Queen Arwa University,False,15.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/769.json,1,0.0,0.0
+774,Georgia Hirst,Georgia Hirst,True,85.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/774.json,6,1.0,0.8571428571428571
+790,"""Manos""","""Manos""",True,90.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/790.json,2,1.0,1.0
+773,Black,Red,False,10.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/773.json,5,0.0,0.0
+771,Vakkorama,Vakkorama,True,95.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/771.json,5,1.0,0.8333333333333334
+783,Electra,Electra,True,97.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/783.json,3,1.0,1.0
+793,23/07,29/02,False,72.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/793.json,2,0.0,0.0
+775,"Munich (München), Germany",Boston,False,72.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/775.json,2,0.0,0.0
+778,21 years old,21,True,72.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/778.json,9,0.3333333333333333,0.75
+791,JadaL (جَدلْ),Jadal,True,98.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/791.json,5,1.0,0.625
+770,"Laura Lojo-Rodríguez (Laura María Lojo Rodríguez), Professor of English Literature, University of Santiago de Compostela",Laura Lojo-Rodriguez,True,86.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/770.json,5,1.0,0.5555555555555556
+776,"""The Dorset Culture of the Eastern Arctic""",The Dorset Culture of the Eastern Arctic,True,94.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/776.json,4,0.75,0.5
+785,Rona Weerasuriya,Rona Weerasuriya,True,93.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/785.json,6,0.6666666666666666,1.0
+781,Raheem Sterling,Raheem Sterling,True,98.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/781.json,2,1.0,0.6666666666666666
+788,"Taj-ul-Masajid (Taj-ul-Masjid), Bhopal, Madhya Pradesh, India",Taj-ul-Masajid,True,88.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/788.json,7,0.8571428571428571,0.8571428571428571
+784,Jacqueline Georgette Cantrelle,Jacqueline Georgette Cantrelle,True,97.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_team3_deepseek-flash/results/784.json,5,1.0,1.0

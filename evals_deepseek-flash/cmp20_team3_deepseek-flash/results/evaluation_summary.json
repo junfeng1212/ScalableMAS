@@ -1,0 +1,118 @@
+{
+  "LLM": "deepseek-flash",
+  "Accuracy (%)": 80.0,
+  "Recall (%)": 75.49,
+  "avg_tool_stats": {
+    "post_message": 7.05,
+    "search": 150.0,
+    "read_messages": 14.55,
+    "finish": 1.0,
+    "bash": 2.2
+  },
+  "Calibration Error (%)": 0.0,
+  "Retriever": "change me when submitting",
+  "Link": "change me when submitting",
+  "Evaluation Date": "2026-10-27",
+  "per_query_metrics": [
+    {
+      "query_id": "787",
+      "correct": true,
+      "recall": 77.78
+    },
+    {
+      "query_id": "786",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "792",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "772",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "769",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "774",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "790",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "773",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "771",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "783",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "793",
+      "correct": false,
+      "recall": 0.0
+    },
+    {
+      "query_id": "775",
+      "correct": false,
+      "recall": 16.67
+    },
+    {
+      "query_id": "778",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "791",
+      "correct": true,
+      "recall": 87.5
+    },
+    {
+      "query_id": "770",
+      "correct": true,
+      "recall": 77.78
+    },
+    {
+      "query_id": "776",
+      "correct": true,
+      "recall": 83.33
+    },
+    {
+      "query_id": "785",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "781",
+      "correct": true,
+      "recall": 66.67
+    },
+    {
+      "query_id": "788",
+      "correct": true,
+      "recall": 100.0
+    },
+    {
+      "query_id": "784",
+      "correct": true,
+      "recall": 100.0
+    }
+  ]
+}

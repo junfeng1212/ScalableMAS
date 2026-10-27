@@ -1,0 +1,12 @@
+# Comparison experiment, SOLO side: same model, queries and judge as compare20_team.yaml,
+# but a single agent and no message board.
+base: compare20_team.yaml
+experiment: cmp20_solo_deepseek-flash
+
+team:
+  agents: [Bob]
+  system_prompt: prompts/system_solo.md
+  task_prompt: prompts/task_solo.md
+
+board:
+  enabled: false                  # nobody to talk to: no post_message / read_messages tools

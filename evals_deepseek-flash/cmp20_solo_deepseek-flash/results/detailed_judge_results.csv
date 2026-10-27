@@ -1,0 +1,21 @@
+query_id,predicted_answer,correct_answer,judge_correct,confidence,is_completed,parse_error,json_path,num_citations,precision_positives,recall_positives
+787,Emmanuel Kwesi Danso Arthur Junior,Emmanuel Kwesi Danso Arthur Junior ,True,96.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/787.json,7,1.0,0.7777777777777778
+786,Kiran Shah,Kiran Shah,True,92.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/786.json,3,0.6666666666666666,0.6666666666666666
+792,Oral creatine supplementation: a potential adjunct therapy for rheumatoid arthritis patients,Oral creatine supplementation: A potential adjunct therapy for rheumatoid arthritis patients,True,92.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/792.json,5,1.0,1.0
+772,The school secretary,Secretary,True,82.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/772.json,4,1.0,0.8
+769,University of Ghana (Legon),Queen Arwa University,False,35.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/769.json,1,0.0,0.0
+774,Georgia Hirst,Georgia Hirst,True,85.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/774.json,7,1.0,1.0
+790,"""Manos""","""Manos""",True,90.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/790.json,2,1.0,1.0
+773,Black,Red,False,78.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/773.json,1,0.0,0.0
+771,Vakkorama,Vakkorama,True,82.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/771.json,5,1.0,0.8333333333333334
+783,Electra,Electra,True,98.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/783.json,3,1.0,1.0
+793,29/02,29/02,True,97.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/793.json,3,1.0,1.0
+775,"Akure, Nigeria",Boston,False,55.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/775.json,4,0.0,0.0
+778,,21,,,False,True,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/778.json,0,0,0
+791,The Black Skirts (검정치마),Jadal,False,82.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/791.json,1,0.0,0.0
+770,Unable to determine from the document collection — no document matching all the stated criteria (coordinator of a research group founded in 2009; co-editor of a 2018 Routledge book; co-editor who keynoted a 2019 conference; convenor of a pre-2020 panel; a 2012 article; PhD on the writings of an English writer) could be located.,Laura Lojo-Rodriguez,False,5.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/770.json,6,0.0,0.0
+776,The Dorset Culture of the Eastern Arctic,The Dorset Culture of the Eastern Arctic,True,98.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/776.json,4,0.75,0.5
+785,Rona Weerasuriya,Rona Weerasuriya,True,90.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/785.json,6,0.6666666666666666,1.0
+781,Raheem Sterling,Raheem Sterling,True,98.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/781.json,2,1.0,0.6666666666666666
+788,"Taj-ul-Masajid (Taj-ul-Masjid / ""Crown of Mosques""), Bhopal, Madhya Pradesh, India — completed 1958, capacity 175,000 worshippers, interior area about 430,000 sq ft, ~1.2 km from the Moti Masjid (built 1860) and ~0.5 km from Govt Hamidia Hospital (with Gandhi Medical College).",Taj-ul-Masajid,True,80.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/788.json,7,0.8571428571428571,0.8571428571428571
+784,Jacques André François Petit (known professionally as Jacques Dynam),Jacqueline Georgette Cantrelle,False,45.0,True,False,/mnt/data2/users/puning.yang/Explore/runs/cmp20_solo_deepseek-flash/results/784.json,3,0.3333333333333333,0.2

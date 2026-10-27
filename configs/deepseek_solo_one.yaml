@@ -1,0 +1,16 @@
+# Single-agent baseline with DeepSeek on one query: same model and settings as deepseek.yaml,
+# but only one agent and no message board.
+base: deepseek.yaml
+experiment: solo_bm25_deepseek-flash_one
+
+browsecomp:
+  query_ids: ["770"]              # the question to solve
+  max_queries: 1
+
+team:
+  agents: [Bob]
+  system_prompt: prompts/system_solo.md
+  task_prompt: prompts/task_solo.md
+
+board:
+  enabled: false                  # nobody to talk to: no post_message / read_messages tools
